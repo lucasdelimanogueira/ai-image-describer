@@ -103,7 +103,7 @@ image-processing-worker/
 
 ## System Architecture
 
-![System Design](assets/system-design.png)
+![System Design](assets/system-desig.png)
 
 ## Frontend Preview
 
