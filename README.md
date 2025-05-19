@@ -1,6 +1,3 @@
-docker build -t ocr-documents . 
-docker run --env-file .env -p 3000:3000 ocr-documents
-
 # AI Image Describer System
 
 ## Overview
@@ -32,6 +29,7 @@ This system allows users to upload images via a React frontend, which are then p
 ## Project Structure
 
 ### API (Backend)
+```
 api/
 ├── Dockerfile
 ├── src/
@@ -47,8 +45,10 @@ api/
 │ ├── utils/
 │ │ └── multerConfig.js
 │ └── index.js
+```
 
 ### Image Processing Worker (Lambda)
+```
 image-processing-worker/
 └── src/
 ├── handlers/
@@ -58,6 +58,7 @@ image-processing-worker/
 ├── vision/
 │ └── openai.js
 └── index.js
+```
 
 ## Environment Variables
 
