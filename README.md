@@ -33,31 +33,31 @@ This system allows users to upload images via a React frontend, which are then p
 api/
 ├── Dockerfile
 ├── src/
-│ ├── controllers/
-│ │ ├── statusController.js
-│ │ └── uploadController.js
-│ ├── routes/
-│ │ └── uploadRoutes.js
-│ ├── services/
-│ │ ├── dynamoService.js
-│ │ ├── s3Service.js
-│ │ └── sqsService.js
-│ ├── utils/
-│ │ └── multerConfig.js
-│ └── index.js
+│   ├── controllers/
+│   │   ├── statusController.js
+│   │   └── uploadController.js
+│   ├── routes/
+│   │   └── uploadRoutes.js
+│   ├── services/
+│   │   ├── dynamoService.js
+│   │   ├── s3Service.js
+│   │   └── sqsService.js
+│   ├── utils/
+│   │   └── multerConfig.js
+│   └── index.js
 ```
 
 ### Image Processing Worker (Lambda)
 ```
 image-processing-worker/
 └── src/
-├── handlers/
-│ └── processImage.js
-├── utils/
-│ └── dynamoService.js
-├── vision/
-│ └── openai.js
-└── index.js
+    ├── handlers/
+    │   └── processImage.js
+    ├── utils/
+    │   └── dynamoService.js
+    ├── vision/
+    │   └── openai.js
+    └── index.js
 ```
 
 ## Environment Variables
